@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:wght@600&family=Signika+Negative:wght@304&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Dosis", sans-serif;
+
+}
+:root {
+--main-bg: #295978;
+--second: #f8f8cb;
+}
+body {
+    height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/023/261/691/non_2x/hot-sun-heat-wave-climate-change-global-warming-high-temperature-thermometer-weather-warning-illustration-background-vector.jpg);
+background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/* .main {
+    height: auto;
+    position: relative;
+} */
+.navbar {
+    background-color: var(--main-bg);
+    
+}
+.navbar a {
+    color: var(--second);
+    font-weight: 500;
+}
+.nav-item {
+    margin-right: 12px;
+}
+.nav-item .nav-link.active {
+    color: #fff !important;
+    
+}
+.nav-item .nav-link:hover
+    {
+        color: #fff;
+}
+/* .navbar-brand:hover {
+    color: var(--second);
+} */
+.navbar-toggler {
+    border: 0px solid grey;
+}
+.navbar-toggler:focus, button:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+/* .navbar button {
+    background-color: var(--second);
+
+} */
+/* .act, .nav-link:hover{
+    color: #cd0a0a73;
+}  */
+.main {
+padding: 200px 0;
+}
+.errpage button, .main button {
+    border: 1px solid black;
+    padding: 0px 6px;
+    background-color: steelblue;
+    border-radius: 3px;
+    color: floralwhite;
+    box-shadow: 0px 1px 1px 0 black;
+    transition: 0.5s background-color ease;    
+}
+.errpage button:hover, .main button:hover{
+    background-color: #7cbff7fc;
+}
+.footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    color: var(--second);
+    text-align: center;
+    margin-top: auto;
+}
+.footer p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 25px;
+}
+.errpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.errpage img {
+    height: 250px;
+}
+.container.weather{
+    width: auto;
+}
+.weather{
+    width: auto;
+    margin-top: 115px;
+    text-align: center;
+}
+.weather h1 {
+    color: midnightblue;
+    font-family: "Karla", sans-serif;
+}
+.input{
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 30px 0;
+
+}
+.input input[type="text"]{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--main-bg);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 8px;
+
+}
+.input input[type="button"]{
+    border: 5px solid var(--main-bg);
+    outline: none;
+    background-color: #46a4f3fc;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 8px;
+    transition: 0.5s background-color ease;
+
+}
+.input input[type="button"]:hover{
+    background-color: #7cbff7fc;
+    
+}
+::placeholder{
+    color: #fff;
+}
+.temp-box {
+    background-color: #214861;
+        border-radius: 5px;
+}
+.date {
+    /* box-shadow: 0 2px 0px 0px black; */
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+}
+.date p{
+    margin: 0;
+   color:  rgb(207 224 106 / 99%);
+}
+.temp_data {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+
+}
+.result {
+    color: #fff;
+    background-color: #295978;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#city {
+    padding: 5px 0;
+    margin: 0;
+}
+#temp {
+    font-weight: 500;
+    margin-right: 10px;
+    color: var(--second);
+    font-family:  sans-serif;
+
+}
+.about {
+    width: 500px;
+    margin: auto;
+}
+.about p {
+    font-size: 20px;
+    font-family: "Karla", sans-serif;
+}
+
+/* media query  */
+@media screen and (max-width: 480px) {
+    .weather{
+        width: auto;
+        margin-top: auto;
+  }
+  .container.about {
+    width: 300px;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+}
